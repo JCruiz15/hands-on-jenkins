@@ -1,5 +1,5 @@
 # base image
-FROM alpine:3.9
+FROM python:3.9.18-bullseye
 
 # Install python 3 and pip
 RUN apk add --update python3
