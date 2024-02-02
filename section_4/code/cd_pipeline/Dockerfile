@@ -1,9 +1,6 @@
 # base image
 FROM python:3.9.18-bullseye
 
-# Install python 3 and pip
-RUN apk add --update python3
-
 # Install Python modules needed by the Python app
 COPY requirements.txt /usr/src/app/
 RUN pip3 install --no-cache-dir -r /usr/src/app/requirements.txt
